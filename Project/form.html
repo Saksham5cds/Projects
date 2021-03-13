@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<style>
+	.heading2{
+		color: white;
+		text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		text-align: center;
+		font-size: 35px;
+	}
+</style>
+<body style="background-color: skyblue">
+<form>
+	<div class="container">
+		<h1 class="heading2"><u>Please Enter Your Info...</u></h1>
+		<label>First Name:</label><br>
+		<input type="text" name="fname" id="fname" placeholder="Your text here...." autocomplete="off" maxlength="15"><br>
+		<label>Last Name:</label><br>
+		<input type="text" name="lname" id="lname" placeholder="Your text here...." autocomplete="off" maxlength="15"><br>
+		<label>E-mail:</label><br>
+		<input type="email" name="email" placeholder="Example_123@abcd.com" autocomplete="off" maxlength="50"><br>
+		<label>Address:</label><br>
+		<input type="text" name="Address" placeholder="*********************,**"><br>
+		<label>Contact No.</label><br>
+		<input type="number" name="Contact" maxlength="20" autocomplete="off"><br>
+		<label>Gender:</label><br>
+		<select>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Others</option>
+		</select><br>
+		<label>Country:</label><br>
+		<select>
+			<option>India</option>
+			<option>U.S.A</option>
+			<option>Canada</option>
+			<option>Australia</option>
+			<option>Russia</option>
+		</select><br>
+		<input type="submit" value="Submit">
+	</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,519 @@
+/* Section 4 */
+
+.Image {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  background-image: url(Gaming2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem auto 0rem;
+  width: 95%;
+  height: 60vh;
+  position: relative;
+  box-shadow: inset 0px 8px 16px 0px rgba(255, 0, 0, 0.3);
+}
+
+.Image_overlay {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.Image_1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Image_1 h1 {
+  color: whitesmoke;
+  font-size: 4rem;
+}
+
+.Image_1 p {
+  color: white;
+  font-size: 2rem;
+}
+
+.Image_1 button {
+  margin-top: 1rem;
+  border: 1.5px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 0.9rem;
+  background: none;
+  transition: 0.2s;
+}
+
+.Image_1 button:hover {
+  font-weight: 300;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.Image_1 button:active {
+  transform: scale(0.8);
+}
+@media screen and (max-width: 500px) {
+  .Image_1 button {
+    font-size: 10px;
+    padding: 0.4rem;
+  }
+
+  .Image_1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .Image_1 p {
+    font-size: 1rem;
+  }
+}
+
+/* Section 5 */
+
+.Content {
+  box-shadow: inset 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 95%;
+  background: rgba(255, 215, 0,0.2);
+  margin: 0rem auto 0rem;
+  position: relative;
+  height: 40vh;
+  user-select: none;
+}
+.Content_1 {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Bio {
+  color: whitesmoke;
+}
+
+.btns {
+  display: flex;
+  list-style-type: none;
+}
+
+.Bio h1 {
+  font-size: 40px;
+  margin-bottom: 3rem;
+}
+
+.Bio p {
+  font-size: 17px;
+}
+
+.Bio aside {
+  margin-top: 2rem;
+  font-size: 13px;
+  font-weight: 900;
+  color: black;
+}
+
+.Content_1 button {
+  margin-left: 230px;
+  padding: 15px 35px;
+  outline: none;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+
+.Content_1 button:hover {
+  box-shadow: 0px 8px 8px 0px rgba(255, 0, 0, 0.3);
+  border-color: red;
+  background-color: none;
+  transition: 0.2s;
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+.Content_1 button:active {
+  transform: scale(0.8);
+}
+@media screen and (max-width: 500px) {
+  .Bio p {
+    font-size: 9px;
+  }
+
+  .Bio aside {
+    font-size: 6px;
+    font-weight: bold;
+  }
+
+  .Content_1 button {
+    margin-left: 50px;
+    padding: 5px 10px;
+  }
+
+  .Content {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+
+/* Section 6 
+
+* {
+  box-sizing: border-box;
+}
+
+.Data {
+  width: 80%;
+  margin: 2rem auto 0rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  border-radius: 0.5rem;
+  flex: 30%;
+  padding: 20px;
+  background-color: #e4f1f9;
+}
+
+.main {
+  background-color: #abc;
+  flex: 70%;
+  padding: 20px;
+}
+
+.side img {
+  width: 200px;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.main img {
+  height: 200px;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.side img:hover,
+.main img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+} /*
+
+/* Prime */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Prime {
+  border-radius: 2rem;
+  box-shadow: inset 5px 10px 30px 5px rgba(1,1,1,0.3);
+  position: relative;
+  margin: 3rem auto 0rem;
+  background: linear-gradient(120deg, crimson 0%,goldenrod 25%,orange 50%, orangered 75%, red 100%);
+  width: 95%;
+  height: 90vh;
+  color: #111;
+  padding: 50px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  display: flex;
+  font-weight: 900;
+}
+.Prime .silver span {
+  color: White;
+}
+.Prime .silver::before {
+  content: 'SILVER';
+  position: absolute;
+  transform: translate(0%,150%) rotate(-15deg);
+  font-size: 10rem;
+  font-weight: bold;
+  opacity: 0.2;
+}
+.Prime .gold {
+  margin-left: 15rem;
+}
+.Prime .gold span {
+  color: yellow;
+}
+.Prime .gold::after {
+  content: 'GOLD';
+  position: absolute;
+  transform: translate(20%,50%) rotate(-15deg);
+  font-size: 10rem;
+  font-weight: bold;
+  opacity: 0.2 ;
+}
+.silver fieldset {
+  border-radius: .5rem;
+  box-shadow: inset 5px 10px 30px 5px rgba(192,192,192,0.3);
+  margin-left: 2.5rem;
+  margin-top: 4rem;
+  position: absolute;
+  width: 35%;
+  height: 40%;
+  display: flex;
+  border: 2px solid black;
+  background-color: rgba(192, 192, 192,0.2);
+}
+.silver legend {
+  font-size: 25px;
+}
+.silver h1 {
+  font-size: 33px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 1px 2px #fff;
+}
+.silver h2 {
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: white;
+  text-shadow: 2px 2px silver;
+}
+.p3M {
+  align-items: center;
+  margin-top: 8rem;
+  margin-left: 10rem;
+}
+.p1M {
+  margin-top: 8rem;
+  margin-left: 2rem;
+} 
+.p1M p {
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  text-decoration: line-through;
+}
+.p3M p {
+  font-size: 25px;
+  color: black;
+  text-decoration: line-through;
+}
+.silver button {
+  outline: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  padding: 15px 25px;
+  background-color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-2deg);
+  transition: 0.2s;
+  border: none;
+}
+.silver button:hover {
+  border: 3px solid silver;
+  transform: scale(1.2);
+  letter-spacing: 4px;
+  box-shadow: 0px 8px 8px 0px rgba(1,1,1,0.3);
+}
+.silver button:active {
+  transform: scale(1);
+}
+.silver_image img {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  opacity: 0.5;
+  transform: translate(-5%,10%) scale(1.9);
+  z-index: 0;
+}
+.silver li {
+  padding: 10px;
+}
+.gold h1 {
+  font-size: 33px;
+  text-shadow: 1px 2px yellow;
+  display: inline-block;
+  color: rgba(215,215,1,0.8);
+  letter-spacing: 2px;
+}
+.gold li {
+  padding: 2px;
+}
+.gold h2 {
+  position: absolute;
+  margin-top: 1rem;
+  color: yellow;
+  text-shadow: 1px 1px gold;
+}
+.gold_image img {
+  pointer-events: none;
+  margin-top: 2rem;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  transform: translate(-10%,10%) scale(1.9);
+}
+.gold fieldset {
+  border-radius: 0.5rem;
+  box-shadow: inset 5px 10px 30px 5px rgba(215,215,1,0.3);
+  margin-left: 3rem;
+  margin-top: 7rem;
+  position: absolute;
+  width: 35%;
+  height: 40%;
+  display: flex;
+  border: 2px solid black;
+  transform: translateY(-35%) translateX(10%);
+  z-index: 1;
+  background-color: rgba(255,215,1,0.3);
+}
+.gold legend {
+  font-size: 25px;
+}
+.gold button {
+  outline: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  padding: 15px 25px;
+  background-color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-2deg);
+  transition: 0.2s;
+  border: none;
+}
+.gold button:hover {
+  border: 3px solid gold;
+  transform: scale(1.2);
+  letter-spacing: 4px;
+  box-shadow: 0px 8px 8px 0px rgba(1,1,1,0.3);
+}
+.gold button:active {
+  transform: scale(1)
+}
+.p3MG {
+  align-items: center;
+  margin-top: 8rem;
+  margin-left: 10rem;
+}
+.p1MG {
+  margin-top: 8rem;
+  margin-left: 1rem;
+} 
+.p1MG p {
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  text-decoration: line-through;
+}
+.p3MG p {
+  font-size: 25px;
+  color: black;
+  text-decoration: line-through;
+}
+@media screen and (max-width: 500px) {
+  .Prime {
+    height: 170vh;
+  }
+  .silver h1 {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+  }
+  .silver li {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+  }
+  .silver_image img{
+    display: none;
+  }
+  .silver fieldset {
+    transform: translateY(93%) translateX(-42%);
+    min-width: 200px;
+    height: auto;
+  }
+  .silver legend {
+    font-size: 20px;
+  }
+  .silver h2 {
+    display: none;
+  }
+  .silver .p1M {
+    transform: translateY(-100%);
+  }
+  .silver .p3M {
+    transform: translateX(-235%);
+  }
+  .silver button,
+  .gold button {
+    transform: rotate(0deg);
+  }
+  .silver button:hover,
+  .gold button:hover {
+    border: none;
+    transform: none;
+    letter-spacing: 2px;
+    box-shadow: none;
+  }
+  .silver button:active,
+  .gold button:active {
+    transform: scale(0.8);
+  }
+  .gold {
+    transform: translateX(-120%);
+  }
+  .gold h1 {
+    font-size: 20px;
+  }
+  .gold h2 {
+    display: none;
+  }
+  .gold li {
+    font-size: 12px;
+    padding: 2px;
+  }
+  .gold_image img {
+    display: none;
+  }
+  .gold fieldset {
+    transform: translateY(-26.5%) translateX(-30%);
+    min-width: 200px;
+    height: auto;
+  }
+  .gold legend {
+    font-size: 20px;
+  }
+  .Prime .silver::before,
+  .Prime .gold::after {
+    display: none;
+  }
+  .gold .p1MG {
+    transform: translateY(-100%) translateX(15%);
+  }
+  .gold .p3MG {
+    transform: translateX(-222%);
+  }
+}
