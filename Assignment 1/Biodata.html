@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	fieldset{
+		border-top: 3px solid #AAA;
+	}
+</style>
+<body>
+	<h1>My Bio Data</h1>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<form>
+			<label>FirstName: </label><input type="text" name="fname" placeholder="First Name">
+			<label>LastName: </label><input type="text" name="lname" placeholder="Last Name"><br><br>
+
+			<label>Male:</label><input type="radio" name="gender" id="Male">
+			<label>Female:</label><input type="radio" name="gender" id="Female">
+			<label>Other:</label><input type="radio" name="gender" id="Other"><br><br>
+
+			<label>Date of Birth : </label><input type="Date" name="dob"><br><br>
+
+			<label>Email : </label><input type="Email" name="Email" placeholder="Enter Your Email"><br><br>
+
+			<label>Phone </label><input type="number" name="Phone" placeholder="+91"><br><br>
+
+			<label>Height </label><input type="text" name="Height" placeholder="Height in Feet">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>Education</legend>
+		<form>
+		    <label>School Name : </label><input type="text" name="School" placeholder="School Name"><br><br>
+
+		    <label>Class : </label><input type="text" name="Class" placeholder="Enter Class"><br><br>
+
+		    <label>Stream : </label>
+		    <select>
+			<option>Stream</option>
+			<option>Stream 2</option>
+			<option>Stream 3</option>
+		    </select><br><br>
+
+		    <label>Marksheet : </label><input type="file" name="Marksheet">
+		</form>
+	</fieldset><br>
+
+	<button type="submit">Submit</button>
+</body>
+</html>
