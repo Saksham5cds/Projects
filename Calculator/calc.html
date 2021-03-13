@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calc.css">
+  <title>Project Calculator</title>
+</head>
+<body>
+  <section>
+    <form class = "Calculator" name="calculator">
+      <input class = "screen" type="text" placeholder= "Project By Saksham Chaudhary" name= "screen" readonly="">
+      <span class="num clear" onclick="document.calculator.screen.value = ''">Clear</span>
+      <span class="num" onclick="document.calculator.screen.value +='/'">/</span>
+      <span class="num" onclick="document.calculator.screen.value +='*'">*</span>
+      <span class="num" onclick="document.calculator.screen.value +='7'">7</span>
+      <span class="num" onclick="document.calculator.screen.value +='8'">8</span>
+      <span class="num" onclick="document.calculator.screen.value +='9'">9</span>
+      <span class="num" onclick="document.calculator.screen.value +='-'">-</span>
+      <span class="num" onclick="document.calculator.screen.value +='4'">4</span>
+      <span class="num" onclick="document.calculator.screen.value +='5'">5</span>
+      <span class="num" onclick="document.calculator.screen.value +='6'">6</span>
+      <span class="num plus" onclick="document.calculator.screen.value +='+'">+</span>
+      <span class="num" onclick="document.calculator.screen.value +='3'">3</span>
+      <span class="num" onclick="document.calculator.screen.value +='2'">2</span>
+      <span class="num" onclick="document.calculator.screen.value +='1'">1</span>
+      <span class="num" onclick="document.calculator.screen.value +='0'">0</span>
+      <span class="num" onclick="document.calculator.screen.value +='00'">00</span>
+      <span class="num" onclick="document.calculator.screen.value +='.'">.</span>
+      <span class="num equal" onclick="document.calculator.screen.value = eval(calculator.screen.value)">=</span>
+    </form>
+  </section>
+</body>
+</html>

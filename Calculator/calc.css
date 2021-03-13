@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#000000,#434343);
+}
+.Calculator {
+  display: grid;
+  position: relative;
+}
+.Calculator .screen {
+  background-color: #232526;
+  color: white;
+  border: 1px solid white;
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  outline: none;
+  padding: 15px;
+  font-size: 25px;
+}
+.Calculator span {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  color: black;
+  background: linear-gradient(#F09819,#EDDE5D);
+  place-items: center;
+  border: 1px solid rgba(0,0,0,0.4);
+  transition: 0.3s;
+  overflow: hidden;
+}
+.Calculator span:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#2193b0,#6dd5ed);
+  font-size: 25px;
+}
+.Calculator span:active {
+  transform: scale(1);
+  background: cyan;
+  transition: none;
+}
+.Calculator span.clear {
+  grid-column: span 2;
+  width: 200px;
+  background: linear-gradient(#FF512F,#F09819);
+}
+.Calculator span.clear:hover {
+  color: black;
+}
+.Calculator span.plus {
+  grid-row: span 2;
+  height: 200px;
+}
+.Calculator span.equal {
+  color: white;
+  background: linear-gradient(#AA076B,#61045F);
+}
