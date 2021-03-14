@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#FC354C,#0ABFBC);
+}
+.container .mac {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 606px;
+  height: 489px;
+}
+.container .mac .imgbx {
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  width: 555px;
+  height: 313px;
+  background: url(Images/desktopWebsite.jpg);
+  background-position: top;
+  background-size: cover;
+  transition: 5s;
+}
+.container .macbook {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: 1;
+  width: 609px;
+  height: 362px;
+}
+.container .macbook .imgbx {
+  position: absolute;
+  top: 20px;
+  left: 72px;
+  width: 465px;
+  height: 291px;
+  background: url(Images/desktopWebsite.jpg);
+  background-size: cover;
+  background-position: top;
+  transition: 6s;
+}
+.container .mob {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  width: 245px;
+  height: 383px;
+  z-index: 2;
+}
+.container .mob .imgbx {
+  position: absolute;
+  top: 45px;
+  left: 42px;
+  width: 161px;
+  height: 285px;
+  background: url(Images/mobileWebsite.jpg);
+  background-position: top;
+  background-size: cover;
+  transition: 9s;
+}
+.container .mob .imgbx:hover,
+.container .macbook .imgbx:hover,
+.container .mac .imgbx:hover {
+  background-position: bottom;
+}
+
+
+@media screen and (width : 500px) {
+  .container {
+    height:auto;
+    flex-direction: column;
+  }
+  .container .mob {
+    position: relative;
+    left: 5%;
+    margin-top: 15vh;
+  }
+  .container .macbook {
+    position: relative;
+    right: 0;
+    margin-top: 15vh;
+  }
+  .container .mac {
+    position: relative;
+    margin-top: 15vh;
+    left: 5%;
+  }
+  .container .mob .imgbx:hover,
+  .container .macbook .imgbx:hover,
+  .container .mac .imgbx:hover {
+    background-position: top;
+  }
+  .container .mob .imgbx:active,
+  .container .macbook .imgbx:active,
+  .container .mac .imgbx:active {
+    background-position: bottom;
+  }
+}
