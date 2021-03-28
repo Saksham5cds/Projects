@@ -1,0 +1,152 @@
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.Card_Container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+.Card_Container .Card_Box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+.Card_Container .Card_Box::before {
+  content: 'GAME';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.Card_Container .Card_Box::after {
+  content: 'WORLD';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.Card_Container .Card_Box:hover:before,
+.Card_Container .Card_Box:hover::after {
+  opacity: 0.04;
+}
+.Card_Container .Card_Box .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+.Card_Container .Card_Box:hover .name {
+  top: 20px;
+  opacity: 1;
+} 
+.Card_Container .Card_Box .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+.Card_Container .Card_Box:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+.Card_Container .Card_Box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px);
+  z-index: 10;
+  opacity: 1;
+}
+.Card_Container .Card_Box .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px);
+}
+.Card_Container .Card_Box:nth-child(1) .circle,
+.Card_Container .Card_Box:nth-child(1) .buy {
+  background-color: orangered;
+}
+.Card_Container .Card_Box:nth-child(2) .circle,
+.Card_Container .Card_Box:nth-child(2) .buy {
+  background-color: firebrick;
+}
+.Card_Container .Card_Box:nth-child(3) .circle,
+.Card_Container .Card_Box:nth-child(3) .buy {
+  background-color: gold;
+}
+.Card_Container .Card_Box:nth-child(4) .circle,
+.Card_Container .Card_Box:nth-child(4) .buy {
+  background-color: greenyellow;
+}
+.Card_Container .Card_Box:nth-child(5) .circle,
+.Card_Container .Card_Box:nth-child(5) .buy {
+  background-color: red;
+}
+.Card_Container .Card_Box:nth-child(6) .circle,
+.Card_Container .Card_Box:nth-child(6) .buy {
+  background-color: crimson;
+}
+.Card_Container .Card_Box:nth-child(1) .name {
+  color: orangered;
+}
+.Card_Container .Card_Box:nth-child(2) .name {
+  color: firebrick;
+}
+.Card_Container .Card_Box:nth-child(3) .name {
+  color: gold;
+}
+.Card_Container .Card_Box:nth-child(4) .name {
+  color: greenyellow;
+}
+.Card_Container .Card_Box:nth-child(5) .name {
+  color: red;
+}
+.Card_Container .Card_Box:nth-child(6) .name {
+  color: crimson;
+}

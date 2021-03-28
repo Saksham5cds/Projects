@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: linear-gradient(to left top, #051327, #051427, #041528, #041528, #041628);
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid cyan;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  backdrop-filter: blur(1.2px);
+  pointer-events: none;
+  z-index: 11;
+  box-shadow: inset 0px 1px 10px 0px cyan;
+  transition: 0.3s;
+  transform-origin: 100% 100%;
+  transition-property: transform;
+}
+.cursor_hover {
+  transform: scale(1.5);
+}
+h1 {
+  text-decoration: overline dotted;
+  color: cyan;
+  text-shadow: 1px 5px dodgerblue;
+  font-size: 60px;
+  text-align: center;
+  margin: 5rem auto 4rem;
+}
+#Latest {
+  margin-top: 6rem;
+}
+nav {
+  position: fixed;
+  top: 2px;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul li {
+  padding: 15px 25px;
+  list-style-type: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.8px;
+  cursor: none;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid cyan;
+}
+
+nav ul li:hover a {
+  color: rgb(50, 231, 231);
+  text-shadow: 1px 1px black;
+}
+.burger {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  background: none;
+  border: 1px solid cyan;
+  box-shadow: inset 0px 1px 10px 0px cyan;
+  display: none;
+}
+.burger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: cyan;
+}
+.b_con {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 8;
+  background-color: rgb(4, 21, 40,0.8);
+  overflow: hidden;
+  display: none;
+}
+.b_con li {
+  text-align: center;
+  list-style-type: none;
+  padding: 3.5rem;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.b_con li a {
+  cursor: none;
+  color: cyan;
+  font-size: 25px;
+  text-decoration: none;
+}
+.b_con li:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid cyan;
+}
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/* Search bar */
+.search {
+  margin-top: 7rem;
+  display: flex;
+}
+
+.search .container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.search .container .search_con {
+  display: flex;
+}
+
+input[type="text"] {
+  text-align: center;
+  padding: 25px 100px;
+  text-transform: capitalize;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid cyan;
+  box-shadow: inset 0px 1px 10px 0px cyan;
+  color: white;
+  background: none;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+}
+
+.search .container .img {
+  width: 55px;
+  height: 54px;
+  padding: 5px;
+  border: 2px solid cyan;
+  justify-content: center;
+  display: flex;
+  border-top-right-radius: 8px;
+  box-shadow: inset 0px 1px 10px 0px cyan;
+  transition: 0.4s;
+  background: none;
+}
+
+.search .container .img img {
+  transition: 1s;
+  filter: invert();
+}
+
+.search .container .img:hover img {
+  transform: rotate(360deg);
+}
+
+.search .container .img:active {
+  transform: scale(0.9);
+  transition: none;
+}
+
+@media screen and (max-width: 576px) {
+  .search {
+    margin-top: 70px;
+  }
+}
+
+
+
+/* bestsellers */
+
+
+
+.best {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.best .bestsellers {
+  display: flex;
+}
+
+.best .bestsellers .img .img1,
+.best .bestsellers .img .img2,
+.best .bestsellers .img .img3,
+.best .bestsellers .img .img4,
+.best .bestsellers .img .img5,
+.best .bestsellers .img .img6,
+.best .bestsellers .img .img7,
+.best .bestsellers .img .img8,
+.best .bestsellers .img .img9,
+.best .bestsellers .img .img10,
+.best .bestsellers .img .img11,
+.best .bestsellers .img .img12,
+.best .bestsellers .img .img13,
+.best .bestsellers .img .img14,
+.best .bestsellers .img .img15,
+.best .bestsellers .img .img16,
+.best .bestsellers .img .img17,
+.best .bestsellers .img .img18,
+.best .bestsellers .img .img19,
+.best .bestsellers .img .img20,
+.best .bestsellers .img .img21,
+.best .bestsellers .img .img22,
+.best .bestsellers .img .img23,
+.best .bestsellers .img .img24 {
+  width: 350px;
+  height: 250px;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+  background: black;
+}
+
+.best .bestsellers .img .img1 img,
+.best .bestsellers .img .img2 img,
+.best .bestsellers .img .img3 img,
+.best .bestsellers .img .img4 img,
+.best .bestsellers .img .img5 img,
+.best .bestsellers .img .img6 img,
+.best .bestsellers .img .img7 img,
+.best .bestsellers .img .img8 img,
+.best .bestsellers .img .img9 img,
+.best .bestsellers .img .img10 img,
+.best .bestsellers .img .img11 img,
+.best .bestsellers .img .img12 img,
+.best .bestsellers .img .img13 img,
+.best .bestsellers .img .img14 img,
+.best .bestsellers .img .img15 img,
+.best .bestsellers .img .img16 img,
+.best .bestsellers .img .img17 img,
+.best .bestsellers .img .img18 img,
+.best .bestsellers .img .img19 img,
+.best .bestsellers .img .img20 img,
+.best .bestsellers .img .img21 img,
+.best .bestsellers .img .img22 img,
+.best .bestsellers .img .img23 img,
+.best .bestsellers .img .img24 img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.6s;
+  transform: scale(1.25);
+}
+
+.best .bestsellers .img img:hover {
+  transform: scale(1);
+  opacity: 0.6;
+}
+
+.best .bestsellers .img .img1:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'LAST OF US 2';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img1:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.best .bestsellers .img .img2:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'HALO INFINTE';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img2:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.best .bestsellers .img .img3:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'COD COLD WAR';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img3:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.best .bestsellers .img .img4:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'CYBERPUNK 2077';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img4:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.best .bestsellers .img .img5:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'RESIDENT EVIL 2';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img5:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.best .bestsellers .img .img6:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'DOOM ETERNAL';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img6:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img7:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'DEATH STRANDING';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 19px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img7:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img8:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'MONSTER HUNTING';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 18px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img8:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img9:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'Mine Craft';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img9:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img10:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'GTA V';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 25px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img10:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img11:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'FORTNITE';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 22px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img11:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img12:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'PUBG';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 25px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img12:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img13:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'OVERWATCH';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 22px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img13:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img14:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'COUNTER STRIKE';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img14:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img15:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'MARIO';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 25px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img15:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img16:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'SKYRIM';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 22px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img16:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img17:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'HALO COMBAT EVOLVED';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 14.9px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img17:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img18:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'GOD OF WAR';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 22px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img18:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img19:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'NFS MW';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 22px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img19:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img20:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'AC BROTHERHOOD';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 18px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img20:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img21:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'POP TWO THRONES';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 18px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img21:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img22:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'GTA SANANDAREAS';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 18px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img22:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img23:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'RESIDENT EVIL 7';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 19px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img23:after {
+  opacity: 1;
+  bottom: 10%;
+}
+.best .bestsellers .img .img24:after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: 'UNCHARTED SERIES';
+  text-shadow: 1px 1px black;
+  color: white;
+  opacity: 0;
+  font-size: 18px;
+  transition: 0.6s;
+  pointer-events: none;
+}
+
+.best .bestsellers .img:hover .img24:after {
+  opacity: 1;
+  bottom: 10%;
+}
+
+
+
+
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  height: 7rem;
+  background: none;
+  box-shadow: inset 0px 1px 10px 0px cyan;
+  border-top: 2px dotted cyan ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cyan;
+}
+
+
+@media screen and (max-width: 576px) {
+  .best .bestsellers {
+    flex-direction: column;
+    margin-left: 25px;
+  }
+
+  .best .bestsellers .img {
+    margin-top: 25px;
+  }
+}
